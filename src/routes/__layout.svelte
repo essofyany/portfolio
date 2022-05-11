@@ -1,5 +1,6 @@
 <script>
 	import '../app.css';
+	import Footer from '../components/Footer.svelte';
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -9,5 +10,8 @@
 	rel="stylesheet"
 />
 <main class="w-full min-h-screen bg-gradient-to-tr from-black to-dark">
-	<slot />
+	<div class="mx-[25%] h-full">
+		<slot />
+		<Footer />
+	</div>
 </main>
