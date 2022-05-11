@@ -1,5 +1,7 @@
 <script lang="ts">
 	import { fade, fly, slide } from 'svelte/transition';
+	import { cubicInOut } from 'svelte/easing';
+
 	import { ui } from '../context/uiStore';
 	import AboutMeText from '../components/AboutMeText.svelte';
 	import Navs from '../components/Navs.svelte';
@@ -9,7 +11,7 @@
 </script>
 
 <!-- hero section -->
-<section class="w-full h-screen" in:fly out:slide>
+<section class="w-full h-screen">
 	<div class="absolute top-[20%] right-1/4 bottom-1/4 left-1/4  bg-light/0 flex flex-col gap-8">
 		<!-- avatar card -->
 		<div class="flex items-center gap-4">
@@ -35,7 +37,7 @@
 <!-- posts -->
 <section class="w-full">
 	{#if $ui.activeNav === 'posts'}
-		<div class="" in:fly out:slide>
+		<div class="" transition:fly={{ easing: cubicInOut, duration: 500, y: 20 }}>
 			<div class="h-12 flex justify-between text-light/60 font-medium">
 				<p class="">23 Posts</p>
 				<p class="">View all posts</p>
@@ -50,7 +52,7 @@
 		</div>
 	{/if}
 	{#if $ui.activeNav === 'projects'}
-		<div class="" in:fly out:slide>
+		<div class="" transition:fly={{ easing: cubicInOut, duration: 500, y: 20 }}>
 			<div class="h-12 flex justify-between text-light/60 font-medium">
 				<p class="">23 Projects</p>
 				<p class="">View all projects</p>
@@ -65,7 +67,7 @@
 		</div>
 	{/if}
 	{#if $ui.activeNav === 'resources'}
-		<div class="" in:fly out:slide>
+		<div class="" transition:fly={{ easing: cubicInOut, duration: 500, y: 20 }}>
 			<div class="h-12 flex justify-between text-light/60 font-medium">
 				<p class="">23 Resources</p>
 				<p class="">View all resources</p>
