@@ -11,7 +11,7 @@
 		<span class="underline underline-offset- decoration-2 decoration-meant">Svelte/SvelteKit</span>,
 		and
 		<span class="underline underline-offset- decoration-2 decoration-lightOrange"
-			>NodeJS/Express</span
+			>NodeJS/NestJs</span
 		>, I am also involved in dev communities. I enjoy connecting with people to share ideas and
 		knowledge. My strength lies in a combination of self-learning and consistency.
 	</p>

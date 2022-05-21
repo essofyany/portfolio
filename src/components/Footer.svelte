@@ -1,7 +1,9 @@
 <footer
-	class="w-full h-24 text-light/20 text-xs capitalize font-extralight tracking-wide flex justify-between items-center"
+	class="w-full h-28 text-light/25 text-xs capitalize font-extralight tracking-wide flex flex-col-reverse md:flex-row justify-center gap-2 md:justify-between items-center"
 >
-	<p>All rights reserved, 2022 | built with SvelteKit & Tailwindcss, deployed at Vercel.</p>
+	<p class="text-center md:text-left">
+		All rights reserved, 2022 | built with SvelteKit & Tailwindcss, deployed at Vercel.
+	</p>
 	<ul class="flex gap-4">
 		<li class="cursor-pointer ">
 			<svg

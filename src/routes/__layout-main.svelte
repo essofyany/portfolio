@@ -12,7 +12,6 @@
 />
 <main class="w-full min-h-fit bg-gradient-to-tr from-black to-dark">
 	<div class="mx-8 md:mx-[25%] h-full">
-		<Header />
 		<div class="min-h-fit pb-10">
 			<slot />
 		</div>
