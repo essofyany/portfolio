@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.__wallpaper {
+	width: 100%;
+	min-height: 100vh;
+	background: url('../assets/yana.jpg') center center/cover;
+	background-attachment: fixed;
+}
