@@ -13,7 +13,7 @@ export default function NavTabs() {
 
 	return (
 		<nav class='w-2/3 mx-auto'>
-			<div class='w-full flex items-center justify-between list-none'>
+			<ul class='w-full flex items-center justify-between list-none'>
 				<For each={navs}>
 					{(nav, i) => (
 						<li class='group flex flex-col justify-center items-center'>
@@ -40,7 +40,7 @@ export default function NavTabs() {
 						</li>
 					)}
 				</For>
-			</div>
+			</ul>
 		</nav>
 	);
 }
