@@ -1,27 +1,33 @@
-import { For, Show } from 'solid-js';
+import { createSignal, For, onMount, Show, createEffect } from 'solid-js';
+import { Link, useLocation } from '@solidjs/router';
 import clsx from 'clsx';
 
 export default function NavTabs() {
+	const { pathname } = useLocation();
+	const [activePage, setActivePage] = createSignal(pathname);
 	const navs = [
 		{ name: 'About me', link: '/' },
 		{ name: 'Blogs', link: '/blogs' },
 		{ name: 'Projects', link: '/projects' },
 	];
+
 	return (
 		<nav class='w-2/3 mx-auto'>
 			<div class='w-full flex items-center justify-between list-none'>
 				<For each={navs}>
 					{(nav, i) => (
 						<li class='group flex flex-col justify-center items-center'>
-							<a
+							<Link
+								onClick={() => setActivePage(nav.link)}
+								href={nav.link}
 								class={clsx('px-2 font-normal uppercase text-sm', {
 									'text-black/50': i() > 0,
 									'text-black': i() === 0,
 								})}>
 								{nav.name}
-							</a>
+							</Link>
 							<Show
-								when={i() === 0}
+								when={activePage() == nav.link}
 								fallback={
 									<>
 										<div class='w-full h-0.5 bg-white/10 rounded-md' />
