@@ -7,8 +7,8 @@ import {
 } from '../constants/icons';
 export default function HomePage() {
 	return (
-		<div class='w-full py-8 __mainContent'>
-			<p class='leading-relaxed tracking-wide first-letter:uppercase first-letter:text-lg text-justify font-medium text-black/75'>
+		<div class='w-full my-4 pt-2 pb-10 __mainContent'>
+			<p class='leading-relaxed tracking-wide first-letter:uppercase first-letter:text-xl text-justify font-medium text-black/70'>
 				I'm a self-taught Full Stack JavaScript Developer. I enjoy connecting
 				with people to share ideas and knowledge. My strength lies in a
 				combination of self-learning and consistency to improve myself. I love

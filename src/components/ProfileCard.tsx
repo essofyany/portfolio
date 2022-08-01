@@ -1,18 +1,19 @@
 //@ts-ignore
 import profilePic from '../assets/profile.jpg';
+import avatarPic from '../assets/avatar.jpg';
 
 export default function ProfileCard() {
 	return (
 		<div class='w-2/3 mx-auto flex items-center gap-4'>
 			<figure class='w-24 h-24 bg-white/50 rounded-full border border-white/20'>
 				<img
-					class='w-full h-full bg-cover rounded-full'
-					src={profilePic}
+					class='w-full h-full object-cover rounded-full'
+					src={avatarPic}
 					alt=''
 				/>
 			</figure>
 			<div class='text-black tracking-wide'>
-				<h1 class='text-xl font-bold'>Bilal Essofyany</h1>
+				<h1 class='text-2xl font-extrabold'>Bilal Essofyany</h1>
 				<h2 class='text-sm mb-1 text-black/75'>
 					Full-Stack developer (Heavy frontend)
 				</h2>
