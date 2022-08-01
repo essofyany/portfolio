@@ -1,4 +1,4 @@
-import { createSignal, For, onMount, Show, createEffect } from 'solid-js';
+import { createSignal, For, Show } from 'solid-js';
 import { Link, useLocation } from '@solidjs/router';
 import clsx from 'clsx';
 
@@ -21,8 +21,8 @@ export default function NavTabs() {
 								onClick={() => setActivePage(nav.link)}
 								href={nav.link}
 								class={clsx('px-2 font-normal uppercase text-sm', {
-									'text-black/50': i() > 0,
-									'text-black': i() === 0,
+									'text-black/50': activePage() !== nav.link,
+									'text-black': activePage() == nav.link,
 								})}>
 								{nav.name}
 							</Link>
