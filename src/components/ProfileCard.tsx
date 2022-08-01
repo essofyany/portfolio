@@ -1,5 +1,4 @@
 //@ts-ignore
-import profilePic from '../assets/profile.jpg';
 import avatarPic from '../assets/avatar.jpg';
 
 export default function ProfileCard() {
