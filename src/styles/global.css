@@ -4,7 +4,7 @@
 
 .__wallpaper {
 	width: 100%;
-	min-height: 100vh;
-	background: url('../assets/yana.jpg') center center/cover;
+	height: 100vh;
+	background: url('../assets/yana.jpg') no-repeat bottom center/cover;
 	background-attachment: fixed;
 }

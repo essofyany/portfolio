@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<div class='absolute bottom-2 right-0 px-4 w-full flex items-center justify-between'>
+		<footer class='absolute bottom-2 right-0 px-4 w-full flex items-center justify-between'>
 			<p class='text-[10px] tracking-wide text-black/75'>
 				© <span class='font-medium'>B'essofyany</span> 2022, Built with{' '}
 				<span class='font-medium'>SolidJs</span> & Deployed on{' '}
@@ -41,6 +41,6 @@ export default function Footer() {
 					</svg>
 				</li>
 			</ul>
-		</div>
+		</footer>
 	);
 }
