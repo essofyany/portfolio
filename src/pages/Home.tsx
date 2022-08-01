@@ -5,6 +5,7 @@ import {
 	frontendStackList,
 	learningList,
 } from '../constants/icons';
+
 export default function HomePage() {
 	return (
 		<div class='w-full my-4 pt-2 pb-10 __mainContent'>
