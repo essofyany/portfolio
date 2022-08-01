@@ -10,7 +10,7 @@ export default function Layout(props: { children: JSX.Element }) {
 		<div class='w-1/2 mx-auto h-full'>
 			<GlassCard>
 				<Header />
-				<main class='bg-red-200 w-full'>
+				<main class='w-full'>
 					{c()}
 				</main>
 				<Footer />
