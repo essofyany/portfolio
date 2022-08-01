@@ -1,4 +1,5 @@
 import { For } from 'solid-js';
+import StackItemCard from '../components/StackItemCard';
 import {
 	backendStackList,
 	frontendStackList,
@@ -20,13 +21,7 @@ export default function HomePage() {
 			</div>
 			<div class='w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4'>
 				<For each={frontendStackList}>
-					{({ icon, name }, index) => (
-						<div
-							data-index={index()}
-							class='w-24 h-24 p-4 bg-white/10 shadow-xl backdrop-blur-sm rounded border border-white/25'>
-							<img src={icon} alt={name} />
-						</div>
-					)}
+					{(item, index) => <StackItemCard data-index={index()} {...item} />}
 				</For>
 			</div>
 			<div class='w-fit mt-4'>
@@ -36,13 +31,7 @@ export default function HomePage() {
 			</div>
 			<div class='w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4'>
 				<For each={backendStackList}>
-					{({ icon, name }, index) => (
-						<div
-							data-index={index()}
-							class='w-24 h-24 p-4 bg-white/10 shadow-xl backdrop-blur-sm rounded border border-white/25'>
-							<img src={icon} alt={name} />
-						</div>
-					)}
+					{(item, index) => <StackItemCard data-index={index()} {...item} />}
 				</For>
 			</div>
 			<div class='w-fit mt-4'>
@@ -54,13 +43,7 @@ export default function HomePage() {
 			</div>
 			<div class='w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4'>
 				<For each={learningList}>
-					{({ icon, name }, index) => (
-						<div
-							data-index={index()}
-							class='w-24 h-24 p-4 bg-white/10 shadow-xl backdrop-blur-sm rounded border border-white/25'>
-							<img src={icon} alt={name} />
-						</div>
-					)}
+					{(item, index) => <StackItemCard data-index={index()} {...item} />}
 				</For>
 			</div>
 		</div>
