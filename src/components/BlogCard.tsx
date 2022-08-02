@@ -1,14 +1,19 @@
+import { Link } from '@solidjs/router';
 // import { mergeProps } from 'solid-js';
+
 // interface BlogCardProps {
 // 	title: string;
 // 	date: Date;
 // 	cover: string;
 // 	readTime: string;
 // }
+
 export default function BlogCard() {
 	// const { cover, date, readTime, title } = mergeProps(props);
 	return (
-		<div class='hover:bg-white/25 cursor-pointer space-y-5 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
+		<Link
+			href='/blogs/blog-id'
+			class='hover:bg-white/25 cursor-pointer space-y-5 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
 			<figure class='h-24 rounded-lg bg-white/25 overflow-hidden border border-white/25'>
 				<img
 					class='w-full h-full object-cover rounded-lg'
@@ -24,6 +29,6 @@ export default function BlogCard() {
 					May 26, 2021 · 14 min read
 				</p>
 			</div>
-		</div>
+		</Link>
 	);
 }

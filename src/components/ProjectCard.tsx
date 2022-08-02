@@ -1,17 +1,19 @@
-// import { mergeProps, For } from 'solid-js';
+import { Link } from '@solidjs/router';
+import { For } from 'solid-js';
+
 // interface ProjectCardProps {
 // 	title: string;
 // 	date: Date;
 // 	cover: string;
-
-import { For } from 'solid-js';
-
 // }
+
 export default function ProjectCard() {
 	// const { cover, date, title } = mergeProps(props);
 	const stack = ['SolidJs', 'Tailwindcss', 'typescript'];
 	return (
-		<div class='hover:bg-white/25 cursor-pointer space-y-2 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
+		<Link
+			href='/projects/project-id'
+			class='hover:bg-white/25 cursor-pointer space-y-2 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
 			<ul class='flex text-xs gap-1.5 font-medium capitalize text-black/50'>
 				<For each={stack}>
 					{(item, idx) => <li data-index={idx}>#{item}</li>}
@@ -32,6 +34,6 @@ export default function ProjectCard() {
 					TypeScript Utility Types: The 6 Most Useful
 				</h3>
 			</div>
-		</div>
+		</Link>
 	);
 }
