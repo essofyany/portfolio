@@ -13,7 +13,7 @@ export default function HomePage() {
         I'm a self-taught Full Stack JavaScript Developer. I enjoy connecting
         with people to share ideas and knowledge. My strength lies in a
         combination of self-learning and consistency to improve myself. I love
-        and believe in open source , building side projects is one of my habits.
+        and believe in open source and building side projects.
       </p>
       <div class="w-fit">
         <h4 class="mt-4 text-lg font-medium text-black">My Frontend stack:</h4>
