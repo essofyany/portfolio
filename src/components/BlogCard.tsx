@@ -22,7 +22,7 @@ export default function BlogCard() {
 				/>
 			</figure>
 			<div class='space-y-2'>
-				<h3 class='text-sm font-semibold text-black leading-relaxed tracking-wide'>
+				<h3 class='text-sm font-semibold text-black leading-relaxed tracking-wide line-clamp-3'>
 					TypeScript Utility Types: The 6 Most Useful
 				</h3>
 				<p class='text-xs font-medium leading-relaxed tracking-wide text-black/50'>
