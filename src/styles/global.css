@@ -15,6 +15,7 @@ html {
 
 .__mainContent {
 	height: 450px;
+	/* min-height: 450px; */
 	max-height: calc(100vh - 32px - 15px - 154px);
 	overflow-y: auto;
 	padding-right: 5px;

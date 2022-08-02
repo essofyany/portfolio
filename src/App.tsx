@@ -2,6 +2,7 @@ import { Link, MetaProvider, Title } from '@solidjs/meta';
 import { Route, Routes } from '@solidjs/router';
 import type { Component } from 'solid-js';
 import Layout from './components/Layout';
+import BlogDetailsPage from './pages/BlogDetails';
 import BlogsPage from './pages/Blogs';
 import HomePage from './pages/Home';
 import ProjectsPage from './pages/Projects';
@@ -16,6 +17,7 @@ const App: Component = () => {
 					<Routes>
 						<Route path='/' component={HomePage} />
 						<Route path='/blogs' component={BlogsPage} />
+						<Route path='/blogs/:blogId' component={BlogDetailsPage} />
 						<Route path='/projects' component={ProjectsPage} />
 					</Routes>
 				</Layout>
