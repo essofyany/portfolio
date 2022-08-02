@@ -13,7 +13,7 @@ export default function BlogCard() {
 	return (
 		<Link
 			href='/blogs/blog-id'
-			class='hover:bg-white/25 cursor-pointer space-y-5 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
+			class='group relative cursor-pointer flex flex-col gap-2 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25 overflow-hidden'>
 			<figure class='h-24 rounded-lg bg-white/25 overflow-hidden border border-white/25'>
 				<img
 					class='w-full h-full object-cover rounded-lg'
@@ -29,6 +29,7 @@ export default function BlogCard() {
 					May 26, 2021 · 14 min read
 				</p>
 			</div>
+			<div class='hidden group-hover:block absolute z-10 top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full animate-[shimmer_2s_infinite]' />
 		</Link>
 	);
 }

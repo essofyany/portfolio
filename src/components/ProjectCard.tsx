@@ -13,7 +13,7 @@ export default function ProjectCard() {
 	return (
 		<Link
 			href='/projects/project-id'
-			class='hover:bg-white/25 cursor-pointer space-y-2 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25'>
+			class='group cursor-pointer flex flex-col gap-2 rounded-2xl bg-white/10 p-4 backdrop-blur-sm border border-white/25 overflow-hidden'>
 			<ul class='flex text-xs gap-1.5 font-medium capitalize text-black/50'>
 				<For each={stack}>
 					{(item, idx) => <li data-index={idx}>#{item}</li>}
@@ -34,6 +34,7 @@ export default function ProjectCard() {
 					TypeScript Utility Types: The 6 Most Useful
 				</h3>
 			</div>
+			<div class='hidden group-hover:block absolute z-10 top-0 left-0 h-full w-full bg-gradient-to-r from-transparent via-white/25 to-transparent -translate-x-full animate-[shimmer_2s_infinite]' />
 		</Link>
 	);
 }
