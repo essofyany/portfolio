@@ -7,12 +7,14 @@ export default function Layout(props: { children: JSX.Element }) {
   const c = children(() => props.children);
 
   return (
-    <div class="w-1/2 mx-auto h-full">
-      <GlassCard>
-        <Header />
-        <main class="w-full">{c()}</main>
-        <Footer />
-      </GlassCard>
+    <div class="container h-full">
+      <div class="w-full md:w-2/3 lg:1/2 mx-auto h-full">
+        <GlassCard>
+          <Header />
+          <main class="w-full">{c()}</main>
+          <Footer />
+        </GlassCard>
+      </div>
     </div>
   );
 }

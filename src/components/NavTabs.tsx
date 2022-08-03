@@ -12,7 +12,7 @@ export default function NavTabs() {
   ];
 
   return (
-    <nav class="w-2/3 mx-auto">
+    <nav class="md:w-2/3 md:mx-auto">
       <ul class="w-full flex items-center justify-between list-none">
         <For each={navs}>
           {(nav, i) => (

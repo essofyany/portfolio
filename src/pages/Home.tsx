@@ -20,7 +20,7 @@ export default function HomePage() {
         <div class="w-full h-0.5 bg-white/75 rounded-md" />
         <div class="mt ml-1 w-full h-1 bg-white/25 rounded-md" />
       </div>
-      <div class="w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4">
+      <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-4 mt-4">
         <For each={frontendStackList}>
           {(item, index) => <StackItemCard data-index={index()} {...item} />}
         </For>
@@ -30,7 +30,7 @@ export default function HomePage() {
         <div class="w-full h-0.5 bg-white/75 rounded-md" />
         <div class="mt ml-1 w-full h-1 bg-white/25 rounded-md" />
       </div>
-      <div class="w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4">
+      <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-4 mt-4">
         <For each={backendStackList}>
           {(item, index) => <StackItemCard data-index={index()} {...item} />}
         </For>
@@ -42,7 +42,7 @@ export default function HomePage() {
         <div class="w-full h-0.5 bg-white/75 rounded-md" />
         <div class="mt ml-1 w-full h-1 bg-white/25 rounded-md" />
       </div>
-      <div class="w-full grid grid-cols-5 gap-x-2 gap-y-4 mt-4">
+      <div class="w-full grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-x-2 gap-y-4 mt-4">
         <For each={learningList}>
           {(item, index) => <StackItemCard data-index={index()} {...item} />}
         </For>

@@ -14,7 +14,7 @@ const App: Component = () => {
     <MetaProvider>
       <Title>Bilal Essofyany | Welcome </Title>
       <Link rel="canonical" href="http://essofyany.me/" />
-      <div class="__wallpaper container py-8 h-screen">
+      <div class="__wallpaper py-4 md:py-8 h-screen">
         <Layout>
           <Routes>
             <Route path="/" component={HomePage} />
