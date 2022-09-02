@@ -10,7 +10,6 @@ const remixIcon = '/assets/icons//icons8-remix-100.png';
 const postgresqlIcon = '/assets/icons//icons8-postgresql-100.png';
 const nextIcon = '/assets/icons//icons8-next.js-100.png';
 const mongodbIcon = '/assets/icons//icons8-mongodb-100.png';
-const laravelIcon = '/assets/icons//icons8-laravel-100.png';
 const nestIcon = '/assets/icons//icons8-nest.js-100.png';
 
 export const backendStackList = [
@@ -30,8 +29,7 @@ export const frontendStackList = [
 ];
 export const learningList = [
 	{ name: 'react-native', icon: reactNativeIcon },
-	// { name: 'vue.js', icon: vueIcon },
-	{ name: 'laravel', icon: laravelIcon },
+	{ name: 'vue.js', icon: vueIcon },
 	{ name: 'NestJs', icon: nestIcon },
 	{ name: 'postgresql', icon: postgresqlIcon },
 ];
